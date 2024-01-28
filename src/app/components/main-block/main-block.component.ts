@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   templateUrl: './main-block.component.html',
   styleUrl: './main-block.component.css',
   host: {
-  class: 'flex flex-col items-center '
+  class: 'flex flex-col text-dark items-center '
 },
 
 })

@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   templateUrl: './title-block.component.html',
   styleUrl: './title-block.component.css',
   host: {
-    class: 'flex  justify-center'
+    class: 'flex  '
   },
 })
 export class TitleBlockComponent {
