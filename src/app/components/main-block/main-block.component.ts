@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
+import {TablerIconsModule} from "angular-tabler-icons";
 
 @Component({
   selector: 'app-main-block',
   standalone: true,
-  imports: [],
+  imports: [
+    TablerIconsModule
+  ],
   templateUrl: './main-block.component.html',
-  styleUrl: './main-block.component.css',
+  styleUrls: ['./main-block.component.css',],
   host: {
   class: 'flex flex-col text-dark items-center '
 },
@@ -28,6 +31,8 @@ export class MainBlockComponent {
   public rez: any
 
   startRandom() {
-    this.rez=(this.bdCoffee[Math.floor(Math.random() * this.bdCoffee.length)]) + (this.bdSizing[Math.floor(Math.random() * this.bdSizing.length)])
+    this.rez = (this.bdCoffee[Math.floor(Math.random() * this.bdCoffee.length)]) + (this.bdSizing[Math.floor(Math.random() * this.bdSizing.length)])
   }
+
+
 }
